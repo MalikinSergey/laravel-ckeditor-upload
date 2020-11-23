@@ -1,0 +1,28 @@
+{
+    "name": "mlsg/laravel-ckeditor-upload",
+    "description": "Laravel backend package for Ckeditor 5 with simple upload plugin",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Malykhin Sergey",
+            "email": "malikin.sergey.1988@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/framework": ">=6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mlsg\\LaravelCkeditorUpload": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mlsg\\LaravelCkeditorUpload\\LaravelCkeditorUploadProvider"
+            ]
+        }
+    }
+}
