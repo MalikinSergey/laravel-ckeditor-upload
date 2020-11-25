@@ -6,7 +6,7 @@ Route::middleware(config('ckeditor-upload.middleware'))->group(function () {
 
     Route::post(config('ckeditor-upload.upload_url'), function (\Illuminate\Http\Request $request) {
 
-        $file = $request->file('image');
+        $file = $request->file('upload');
 
         $disk = config('ckeditor-upload.disk');
 
